@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "node6"
+  ],
+  "plugins": [
+    "transform-es2015-classes",
+    "syntax-async-functions",
+    "transform-regenerator"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "transform-rename-import",
+          {
+            "original": "^(.+?)settings(\\.js)*$",
+            "replacement": "$1settings-production"
+          }
+        ]
+      ]
+    }
+  }
+}
