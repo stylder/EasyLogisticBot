@@ -36,6 +36,8 @@ export default class PassengerIndex extends Action {
         rows: [
           [{ label: this.t('car'), value: 'car' }],
           [{ label: this.t('motorbike'), value: 'motorbike' }],
+          [{ label: this.t('car1'), value: 'car' }],
+          [{ label: this.t('motorbike1'), value: 'motorbike' }],
           [{ label: this.t('s'), value: 'settings' }],
         ],
         defaultMessage: this.gt('default_options_message'),

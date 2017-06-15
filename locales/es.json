@@ -7,7 +7,9 @@
 	"request-phone.all_set": "👌 Todo listo, ¡Ahora ya puedes pedir un taxi!",
 	"passenger-index.choose_taxi_type": "¿Que tipo de taxi deseas?",
 	"passenger-index.car": "🚗 Automóvil",
+  "passenger-index.car1": "🚗 Tolva o Gondola",
 	"passenger-index.motorbike": "🏍  Motoneta / Motocicleta",
+  "passenger-index.motorbike1": "🏍  Motoneta / Motocicleta1",
 	"passenger-index.s": "🔧 Ajustes",
 	"passenger-index.error_only_known_type": "Opción desconocida, por favor selecciona motocicleta, automóvil o ajustes.",
 	"passenger-request-location.provide_location": "Por favor comparte tu ubicación para encontrar conductores cercanos.",
@@ -70,5 +72,7 @@
 	"global.driver": "Conductor",
 	"global.phone": "☎️ %s",
 	"__locale__": "es",
-	"__eof__": "__eof__"
+	"__eof__": "__eof__",
+	"global.yes1": "global.yes1",
+	"global.no1": "global.no1"
 }
