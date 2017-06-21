@@ -34,10 +34,10 @@ export default class PassengerIndex extends Action {
       .add(new TextResponse({ message: this.t('choose_taxi_type') }))
       .add(new OptionsResponse({
         rows: [
-          [{ label: this.t('car'), value: 'car' }],
-          [{ label: this.t('motorbike'), value: 'motorbike' }],
-          [{ label: this.t('car1'), value: 'car' }],
-          [{ label: this.t('motorbike1'), value: 'motorbike' }],
+          [{ label: this.t('tolva'), value: 'tolva' }],
+          [{ label: this.t('jaula_granel'), value: 'jaula_granel' }],
+          [{ label: this.t('caja_48'), value: 'caja_48' }],
+          [{ label: this.t('caja_53'), value: 'caja_53' }],
           [{ label: this.t('s'), value: 'settings' }],
         ],
         defaultMessage: this.gt('default_options_message'),
@@ -57,8 +57,10 @@ export default class PassengerIndex extends Action {
     const response = new CompositeResponse();
 
     switch (value) {
-      case 'motorbike':
-      case 'car':
+      case 'tolva':
+      case 'jaula_granel':
+      case 'caja_48':
+      case 'caja_53':
         response.add(new TextResponse({ message: '👌 OK!' }));
         response.add(new UserStateResponse({ requestedVehicleType: value }));
         response.add(new RedirectResponse({ path: 'passenger-verify-cash' }));

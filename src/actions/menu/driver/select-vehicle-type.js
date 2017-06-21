@@ -34,8 +34,10 @@ export default class SelectVehicleType extends Action {
       .add(new TextResponse({ message: this.t('select') }))
       .add(new OptionsResponse({
         rows: [
-          [{ label: this.t('car'), value: 'car' }],
-          [{ label: this.t('motorbike'), value: 'motorbike' }],
+          [{ label: this.t('tolva'), value: 'tolva' }],
+          [{ label: this.t('jaula_granel'), value: 'jaula_granel' }],
+          [{ label: this.t('caja_48'), value: 'caja_48' }],
+          [{ label: this.t('caja_53'), value: 'caja_53' }],
         ],
       }));
   }
@@ -51,8 +53,10 @@ export default class SelectVehicleType extends Action {
     const response = new CompositeResponse();
 
     switch (value) {
-      case 'motorbike':
-      case 'car':
+      case 'tolva':
+      case 'jaula_granel':
+      case 'caja_48':
+      case 'caja_53':
         response.add(new TextResponse({ message: '👌 OK!' }));
         response.add(new UserStateResponse({ vehicleType: value }));
         response.add(new RedirectResponse({ path: 'driver-explain-checkins' }));
